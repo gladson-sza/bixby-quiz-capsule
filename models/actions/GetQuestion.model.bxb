@@ -1,0 +1,18 @@
+action (GetQuestion) {
+  description (__DESCRIPTION__)
+
+  type(Search)
+
+  collect {
+    input (difficulty) {
+      type (Difficulty)
+      min (Optional) max (One)
+    }
+
+    input (category) {
+      type (Category)
+      min (Optional) max (One)
+    }
+  }
+  output (QuestionResult)
+}

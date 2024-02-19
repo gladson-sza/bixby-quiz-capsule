@@ -1,0 +1,13 @@
+action (ComputeQuestion) {
+  description (__DESCRIPTION__)
+
+  type (Search)
+
+  collect {
+    input (question) {
+      type (QuestionResult)
+      min (Optional) max (One)
+    }
+  }
+  output (IsCorrectQuestion)
+}

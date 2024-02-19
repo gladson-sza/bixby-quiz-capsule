@@ -1,0 +1,86 @@
+result-view {
+
+  match {
+    QuestionResult (result) {
+      from-output: GetQuestion (resultOutput)
+    }
+  }
+  message {
+    template ("#{value(result.question)}")
+  }
+  render {
+    layout {
+      section {
+        content {
+          if (exists(result.answers.answer_a)) {
+            cell-card {
+              on-click {
+                intent {
+                  goal: ComputeQuestion
+                }
+              }
+              slot2 {
+                content {
+                  secondary {
+                    template ("A #{value(result.answers.answer_a)}")
+                  }
+                }
+              }
+            }
+          }
+          
+          if (exists(result.answers.answer_b)) {
+            cell-card {
+              on-click {
+                intent {
+                  goal: ComputeQuestion
+                }
+              }
+              slot2 {
+                content {
+                  secondary {
+                    template ("B #{value(result.answers.answer_b)}")
+                  }
+                }
+              }
+            }
+          }
+
+          if (exists(result.answers.answer_c)) {
+            cell-card {
+              on-click {
+                intent {
+                  goal: ComputeQuestion
+                }
+              }
+              slot2 {
+                content {
+                  secondary {
+                    template ("C #{value(result.answers.answer_c)}")
+                  }
+                }
+              }
+            }
+          }
+
+          if (exists(result.answers.answer_d)) {
+            cell-card {
+              on-click {
+                intent {
+                  goal: ComputeQuestion
+                }
+              }
+              slot2 {
+                content {
+                  secondary {
+                    template ("D #{value(result.answers.answer_d)}")
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

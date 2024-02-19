@@ -1,0 +1,13 @@
+endpoints {
+   action-endpoints {
+     action-endpoint (GetQuestion) {
+       accepted-inputs (difficulty, category)
+       local-endpoint ("GetQuestion.js")
+     }
+
+     action-endpoint (ComputeQuestion) {
+       accepted-inputs (question)
+       local-endpoint ("ComputeQuestion.js")
+     }
+   }
+}
