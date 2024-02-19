@@ -1,0 +1,6 @@
+vocab (Category) {
+  "Linux"
+  "DevOps"
+  "Code"
+  "CMS"
+}

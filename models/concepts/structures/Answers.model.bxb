@@ -20,14 +20,4 @@ structure (Answers) {
     type (AnswerD)
     min (Optional) max (One)
   }
-
-  property (answer_e) {
-    type (AnswerE)
-    min (Optional) max (One)
-  }
-
-  property (answer_f) {
-    type (AnswerF)
-    min (Optional) max (One)
-  }
 }

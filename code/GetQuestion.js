@@ -2,6 +2,9 @@ import http from 'http'
 import console from 'console'
 
 export default function getQuestion({difficulty = null, category = null}) {
+
+  console.log(difficulty, category)
+
   const url = 'https://quizapi.io/api/v1/questions'
   const options = {
     format: 'json',
@@ -14,7 +17,7 @@ export default function getQuestion({difficulty = null, category = null}) {
   }
 
   const response = http.getUrl(url, options);
-  console.log ("response = " + response)
+  console.log ("response = ", response)
 
   const singleResponse = response[0]
 
