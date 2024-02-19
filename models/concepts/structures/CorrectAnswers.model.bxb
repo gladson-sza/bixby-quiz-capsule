@@ -20,4 +20,14 @@ structure (CorrectAnswers) {
     type (CorrectAnswerD)
     min (Optional) max (One)
   }
+
+  property (answer_e_correct) {
+    type (CorrectAnswerE)
+    min (Optional) max (One)
+  }
+
+  property (answer_f_correct) {
+    type (CorrectAnswerF)
+    min (Optional) max (One)
+  }
 }

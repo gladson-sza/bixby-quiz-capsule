@@ -21,6 +21,8 @@ export default function getQuestion({difficulty = null, category = null}) {
 
   const singleResponse = response[0]
 
+  console.log ("singleResponse = ", singleResponse)
+
   return {
     id: singleResponse.id,
     question: singleResponse.question,

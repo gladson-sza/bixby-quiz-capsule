@@ -6,3 +6,7 @@ train (t-w9lqefv6wtqserbtsyfk2pect) {
   utterance ("[g:GetQuestion] Show an (Easy)[v:Difficulty] quiz")
   last-modified (1708378416986)
 }
+train (t-wu46do376mchz5h9hvzfgkm64) {
+  utterance ([g:GetQuestion] Show me a Quiz)
+  last-modified (1708379916415)
+}
