@@ -1,21 +1,32 @@
-export default function computeQuestion(question, choice) {
-  let correct = ''
+import console from 'console'
 
-  if (question.correct_answers.answer_a_correct) {
-    correct = 'A'
+export default function computeQuestion(input) {
+  let isCorrect = false
+
+  console.log(input.answer_a)
+  console.log(input.answer_b)
+  console.log(input.answer_c)
+  console.log(input.answer_d)
+
+  if (input.answer_a === 'true') {
+    isCorrect = true
   }
 
-  if (question.correct_answers.answer_b_correct) {
-    correct = 'B'
+  if (input.answer_b === 'true') {
+    isCorrect = true
   }
 
-  if (question.correct_answers.answer_c_correct) {
-    correct = 'C'
+  if (input.answer_c === 'true') {
+    isCorrect = true
   }
 
-  if (question.correct_answers.answer_d_correct) {
-    correct = 'D'
+  if (input.answer_d === 'true') {
+    isCorrect = true
   }
 
-  return choice == correct
+  if (isCorrect) {
+    return 'Correct answer!'
+  } else {
+    return 'Sorry, the answer was incorrect, try again.'
+  }
 }

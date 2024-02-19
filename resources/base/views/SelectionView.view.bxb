@@ -17,12 +17,13 @@ result-view {
               on-click {
                 intent {
                   goal: ComputeQuestion
+                  value: $expr(result.correct_answers.answer_a_correct)
                 }
               }
               slot2 {
                 content {
                   secondary {
-                    template ("A #{value(result.answers.answer_a)}")
+                    template ("A - #{value(result.answers.answer_a)}")
                   }
                 }
               }
@@ -34,12 +35,13 @@ result-view {
               on-click {
                 intent {
                   goal: ComputeQuestion
+                  value: $expr(result.correct_answers.answer_b_correct)
                 }
               }
               slot2 {
                 content {
                   secondary {
-                    template ("B #{value(result.answers.answer_b)}")
+                    template ("B - #{value(result.answers.answer_b)}")
                   }
                 }
               }
@@ -51,12 +53,13 @@ result-view {
               on-click {
                 intent {
                   goal: ComputeQuestion
+                  value: $expr(result.correct_answers.answer_c_correct)
                 }
               }
               slot2 {
                 content {
                   secondary {
-                    template ("C #{value(result.answers.answer_c)}")
+                    template ("C - #{value(result.answers.answer_c)}")
                   }
                 }
               }
@@ -68,12 +71,13 @@ result-view {
               on-click {
                 intent {
                   goal: ComputeQuestion
+                  value: $expr(result.correct_answers.answer_d_correct)
                 }
               }
               slot2 {
                 content {
                   secondary {
-                    template ("D #{value(result.answers.answer_d)}")
+                    template ("D - #{value(result.answers.answer_d)}")
                   }
                 }
               }

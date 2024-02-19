@@ -4,10 +4,26 @@ action (ComputeQuestion) {
   type (Search)
 
   collect {
-    input (question) {
-      type (QuestionResult)
+    input (answer_a) {
+      type (CorrectAnswerA)
       min (Optional) max (One)
     }
-  }
-  output (IsCorrectQuestion)
+
+    input (answer_b) {
+      type (CorrectAnswerB)
+      min (Optional) max (One)
+    }
+
+    input (answer_c) {
+      type (CorrectAnswerC)
+      min (Optional) max (One)
+    }
+
+    input (answer_d) {
+      type (CorrectAnswerD)
+      min (Optional) max (One)
+    }
+  } 
+
+  output (OutputResult)
 }

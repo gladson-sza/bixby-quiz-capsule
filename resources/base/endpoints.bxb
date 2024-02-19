@@ -6,7 +6,7 @@ endpoints {
      }
 
      action-endpoint (ComputeQuestion) {
-       accepted-inputs (question)
+       accepted-inputs (answer_a, answer_b, answer_c, answer_d)
        local-endpoint ("ComputeQuestion.js")
      }
    }
