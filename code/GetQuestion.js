@@ -1,25 +1,12 @@
 import http from 'http'
 import console from 'console'
+import QUESTIONS from './Data.js'
 
 export default function getQuestion({difficulty = null, category = null}) {
 
   console.log(difficulty, category)
 
-  const url = 'https://quizapi.io/api/v1/questions'
-  const options = {
-    format: 'json',
-    query: {
-      apiKey: 'CB2SIM7VFEknEArr008Y7vVwn7UngI3dWqUpAF6H',
-      limit: 1,
-      difficulty: difficulty,
-      category: category
-    }
-  }
-
-  const response = http.getUrl(url, options);
-  console.log ("response = ", response)
-
-  const singleResponse = response[0]
+  const singleResponse = QUESTIONS[Math.floor((Math.random() * 100) / 40)]
 
   console.log ("singleResponse = ", singleResponse)
 

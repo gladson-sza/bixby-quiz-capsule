@@ -25,8 +25,8 @@ export default function computeQuestion(input) {
   }
 
   if (isCorrect) {
-    return 'Correct answer!'
+    return 'Parabéns, você acertou!'
   } else {
-    return 'Sorry, the answer was incorrect, try again.'
+    return 'Ops, resposta errada, tente novamente!'
   }
 }
