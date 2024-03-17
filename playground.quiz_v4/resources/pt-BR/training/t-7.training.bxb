@@ -1,0 +1,4 @@
+train (t-7mci18708c80q8haotzlr236l) {
+  utterance ([g:GetQuestion] Mostre um quiz)
+  last-modified (1710715090753)
+}

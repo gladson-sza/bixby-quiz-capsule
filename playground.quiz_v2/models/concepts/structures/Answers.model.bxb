@@ -1,0 +1,33 @@
+structure (Answers) {
+  description (__DESCRIPTION__)
+
+  property (answer_a) {
+    type (AnswerA)
+    min (Optional) max (One)
+  }
+
+  property (answer_b) {
+    type (AnswerB)
+    min (Optional) max (One)
+  }
+
+  property (answer_c) {
+    type (AnswerC)
+    min (Optional) max (One)
+  }
+
+  property (answer_d) {
+    type (AnswerD)
+    min (Optional) max (One)
+  }
+
+  property (answer_e) {
+    type (AnswerE)
+    min (Optional) max (One)
+  }
+
+  property (answer_f) {
+    type (AnswerF)
+    min (Optional) max (One)
+  }
+}
