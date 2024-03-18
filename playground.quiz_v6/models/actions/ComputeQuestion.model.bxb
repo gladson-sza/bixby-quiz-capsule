@@ -1,0 +1,29 @@
+action (ComputeQuestion) {
+  description (__DESCRIPTION__)
+
+  type (Search)
+
+  collect {
+    input (answer_a) {
+      type (CorrectAnswerA)
+      min (Optional) max (One)
+    }
+
+    input (answer_b) {
+      type (CorrectAnswerB)
+      min (Optional) max (One)
+    }
+
+    input (answer_c) {
+      type (CorrectAnswerC)
+      min (Optional) max (One)
+    }
+
+    input (answer_d) {
+      type (CorrectAnswerD)
+      min (Optional) max (One)
+    }
+  } 
+
+  output (OutputResult)
+}

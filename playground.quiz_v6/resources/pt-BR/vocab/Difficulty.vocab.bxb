@@ -1,0 +1,5 @@
+vocab (Difficulty) {
+  "Fácil"
+  "Médio"
+  "Difícil"
+}

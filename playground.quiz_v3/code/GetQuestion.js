@@ -4,8 +4,16 @@ import QUESTIONS from './Data.js'
 export default function getQuestion({difficulty = null, category = null}) {
 
   console.log(difficulty, category)
+  let questions = QUESTIONS
+  if (category) {
+    questions = QUESTIONS.filter(e => e.category === category)
+  }
 
-  const singleResponse = QUESTIONS[Math.floor((Math.random() * 100) / 40)]
+  if (difficulty) {
+    questions = QUESTIONS.filter(e => e.difficulty === difficulty)
+  }
+
+  const singleResponse = questions[Math.floor((Math.random() * 100) / questions.length)]
 
   console.log ("singleResponse = ", singleResponse)
 

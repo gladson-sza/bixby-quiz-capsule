@@ -1,0 +1,8 @@
+capsule-info {
+  display-name (Quiz Capsule)
+  developer-name (Ocean Brasil)
+  description ("Quiz Capsule")
+  dispatch-name (Quiz Capsule)
+  // Set your own image for your capsule's icon
+  icon-asset (images/icons/bixby_launcher.png)
+}

@@ -1,0 +1,10 @@
+result-view {
+  match {
+    OutputResult (result) {
+      from-output: ComputeQuestion (resultOutput)
+    }
+  }
+  message {
+    template ("#{value(result)}")
+  }
+}

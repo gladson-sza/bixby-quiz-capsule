@@ -1,0 +1,8 @@
+train (t-7mci18708c80q8haotzlr236l) {
+  utterance ([g:GetQuestion] Mostre um quiz)
+  last-modified (1710715090753)
+}
+train (t-7w2vuzugvq5h4iqccwsqd1bsq) {
+  utterance ("[g:GetQuestion] Faça uma pergunta sobre (DevOps)[v:Category]")
+  last-modified (1710721647283)
+}
